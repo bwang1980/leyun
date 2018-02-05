@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8"utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÈÄîÊ¨¢ÂÅ•Â∫∑|Á≤æÂáÜÊÖ¢ÁóÖÁÆ°ÁêÜ</title>
+    <!--[if IE]><script src="html5shiv.js" tppabs="http://www.tuhuanjk.com/scripts/html5shiv.js"></script><![endif]-->
+    <link href="css-v=6917mvlu8smyOXZ4blpLgaRMUp-JhZB5VrskHAVn6ZQ1.css" tppabs="http://www.tuhuanjk.com/Content/css?v=6917mvlu8smyOXZ4blpLgaRMUp-JhZB5VrskHAVn6ZQ1" rel="stylesheet"/>
+
+    <script src="modernizr-v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1" tppabs="http://www.tuhuanjk.com/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+
+    <script src="jquery-v=LmhrAkpKkZOW8YOzhoTeIM0fB6qRMwX8wJ43LZf9qqU1" tppabs="http://www.tuhuanjk.com/bundles/jquery?v=LmhrAkpKkZOW8YOzhoTeIM0fB6qRMwX8wJ43LZf9qqU1"></script>
+
+    <style type="text/css">
+        #loginButton {
+            line-height: 30px;
+            padding: 0 20px;
+            border: 1px solid #000;
+            font-size: 13px;
+            color: #000;
+            border-color: #000;
+            display: inline-block;
+            background-color: transparent;
+        }
+
+        #login-dialog .modal-body > div {
+            padding: 0;
+            margin-bottom: 7px;
+        }
+
+        .modal-dialog {
+            width: 300px;
+        }
+
+        .modal-header {
+            background-color: #d4d3d3;
+            padding: 0 15px;
+            line-height: 40px;
+        }
+
+            .modal-header .login-logo {
+                width: 24px;
+                height: 20px;
+                margin-right: 5px;
+            }
+
+        .modal-title {
+            font-size: 16px;
+        }
+
+        .close-btn {
+            float: right;
+            cursor: pointer;
+        }
+
+        #login-dialog .modal-body input[fill] {
+            width: 100%;
+            border: 1px solid #b0b0b0;
+            line-height: 30px;
+            height: 34px;
+            font-size: 12px;
+            padding-left: 5px;
+        }
+
+        input#verify {
+            width: 175px;
+            border: 1px solid #b0b0b0;
+            line-height: 30px;
+            height: 34px;
+            font-size: 12px;
+            padding-left: 5px;
+        }
+
+        img#verifyImg {
+            height: 34px;
+            width: 88px;
+            margin-left: 5px;
+            float: right;
+        }
+
+        #error-output {
+            color: red;
+        }
+
+        .last-row {
+            font-size: 12px;
+            margin-bottom: 0 !important;
+        }
+
+        .modal-body {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .last-row label {
+            font-weight: normal;
+        }
+
+        .last-row input[type="checkbox"] {
+            vertical-align: middle;
+            margin-top: -2px;
+            margin-bottom: 1px;
+        }
+
+        .last-row a {
+            float: right;
+        }
+
+        .modal-content {
+            border-radius: 0 !important;
+        }
+
+        .modal {
+            text-align: center;
+        }
+
+            .modal:before {
+                display: inline-block;
+                vertical-align: middle;
+                content: " ";
+                height: 100%;
+            }
+
+        .modal-dialog {
+            display: inline-block;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        .bg {
+            min-width: 900px;
+            min-height: 430px;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-position: center 0;
+            background-size: cover;
+        }
+
+        #login-dialog .modal-body > #submitButton {
+            background-color: #2eb2de;
+            color: #fff;
+            line-height: 35px;
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        #regButton {
+            background-color: #fff;
+            color: #2eb2de;
+            line-height: 35px;
+            text-align: center;
+            cursor: pointer;
+            border: solid 1px #2eb2de;
+            display: block;
+            margin-bottom: 15px;
+            text-decoration: none;
+            width: 268px;
+            height: 37px;
+        }
+    </style>
+
+    
+    <style type="text/css">
+
+        body, html {
+            overflow:hidden;
+        }
+
+        #todo-list-panel:hover, #todo-list-panel.show {
+            display: block;
+        }
+        
+        .top-bar-user-info .user-data span.badge {
+            margin:0 0 0 10px;
+        }
+
+        .top-bar-user-info .user-data span.badge + a {
+            margin:0 0 0 10px;
+        }
+
+        .search {
+            width: 560px;
+            height: 44px;
+            border: 1px solid #fff;
+            background: url("index_search_bg.png")/*tpa=http://www.tuhuanjk.com/images/index_search_bg.png*/ repeat;
+            margin: 50px auto auto auto;
+            padding: 5px 10px;
+        }
+
+        .top-bar-user-info, .top-bar-user-info a {
+            color:#fff;
+        }
+
+            .search input {
+                height: 30px;
+                line-height: 32px;
+                outline: none;
+                background-color: transparent;
+                color: #fff;
+                border: none;
+                min-width: 510px;
+                display: inline-block;
+            }
+
+        #loginButton {
+            color: #fff;
+            border-color: #fff;
+        }
+
+        .fix-width-parent {
+            background: url("index_nv_bg.png")/*tpa=http://www.tuhuanjk.com/images/index_nv_bg.png*/ repeat-x;
+        }
+
+        body {
+            background-image: url("index_bg.jpg")/*tpa=http://www.tuhuanjk.com/images/index_bg.jpg*/;
+            background-size: cover;
+            display: -webkit-box !important;
+            display: -ms-box !important;
+            display: -moz-box !important;
+            display: box !important;
+            display: -ms-flexbox !important;
+            display: -webkit-flex !important;
+            display: -moz-flex !important;
+            display: -ms-flex !important;
+            display: flex !important;
+            -webkit-box-orient: vertical;
+            -ms-box-orient: vertical;
+            -moz-box-orient: vertical;
+            box-orient: vertical;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        #search-panel {
+            margin-top: -150px;
+            width: 100%;
+        }
+
+        #searchButton {
+            cursor: pointer;
+        }
+
+        #content-panel {
+            min-width: 1200px
+        }
+
+        .footer {
+            color: #fff;
+            text-align: center;
+            bottom: 10px;
+            width: 100%;
+            font-size: 11px;
+            min-width: 1200px
+        }
+
+            .footer a {
+                color: #fff;
+            }
+
+            .footer .line {
+                display: inline-block;
+                width: 1px;
+                background-color: #fff;
+                height: 16px;
+                margin: 0 5px;
+                position: relative;
+                top: 3px;
+            }
+
+        .dropdown-menu {
+            width: 520px;
+            margin-top: 7px;
+            margin-left: -12px;
+            border-radius: 0;
+        }
+
+        .search-item-name {
+            display:inline-block;
+            width:60px;
+            font-weight:bold;
+            margin-right:20px;
+        }
+
+        .search-item-phone {
+            display:inline-block;
+            width:120px;
+            margin-right:20px;
+        }
+
+        .search-item-thid {
+            display:inline-block;
+            margin-right:20px;
+        }
+    </style>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "hm.js-1b8744d06d96de9e8b41c8595fa7ceca"/*tpa=http://hm.baidu.com/hm.js?1b8744d06d96de9e8b41c8595fa7ceca*/;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body class="bg">
+    <div class="top-header-bar black fix-width-parent hbox">
+    <div class="place-holder" style="width:0"></div>
+    <div class="hbox box-v-center fix-width">
+        <div class="top-bar-logo"><a href="index.htm" tppabs="http://www.tuhuanjk.com/"><img src="namelogo_white.png" tppabs="http://www.tuhuanjk.com/images/namelogo_white.png" width="122" height="34" /></a></div>
+        <div class="place-holder"></div>
+        <div>    <a href="javascript:;" id="loginButton">Áôª&nbsp;ÂΩï</a>
+</div>
+    </div>
+    <div class="place-holder" style="width:0"></div>
+</div>
+    
+    
+
+
+<div id="content-panel" class="place-holder hbox box-v-center">
+    <div id="search-panel">
+        <div style="text-align: center">
+            <img src="slogan.png" tppabs="http://www.tuhuanjk.com/images/slogan.png" />
+        </div>
+        <div class="search">
+    <input type="search" placeholder="ÊêúÁ¥¢ÈÄîÊ¨¢‰ºöÂëò‰ø°ÊÅØ" id="search" autocomplete="off" autofocus/>
+    <img src="search_black.png" tppabs="http://www.tuhuanjk.com/images/search_black.png" id="searchButton" />
+</div>
+
+<script type="text/javascript">
+    window.goToSearchPage = (function () {
+        var isLogin = false;
+
+        function goToSearch(){
+            var v = $("#search").val();
+            if (v == ""){
+                $("#search")[0].focus();
+                return;
+            }
+
+            location.href = "SearchUser-key=.htm"/*tpa=http://www.tuhuanjk.com/THMemberData/SearchUser?key=*/ + encodeURI(v);
+        }
+
+        $("#searchButton").click(function () {
+            if (isLogin){
+                goToSearch();
+            } else {
+                doLogin().done(function () {
+                    isLogin = true;
+                    goToSearch();
+                });
+            }
+        });
+
+        $(function(){
+            function attach(dom, e, f){
+                if (dom.addEventListener){
+                    dom.addEventListener(e, f, true);
+                } else if(dom.attachEvent){
+                    dom.attachEvent(e, f);
+                }
+            }
+
+            $("#search").typeahead({
+                source: function (query, process) {
+                    $.post("/THMemberData/Search", { key: query }).done(function (d) {
+                        process(d);
+                    });
+                },
+                matcher: function () {
+                    return true;
+                },
+                displayText: function (item) {
+                    if (item.vistor)
+                        return " ";
+                    return ['<span class="search-item-name">', item.Name, '</span><span class="search-item-phone">', item.Phone, '</span><span class="search-item-thid">', item.THID].join("");
+                },
+                highlighter: function (text) {
+                    return text;
+                },
+                updater: function (item) {
+                    location.href = "index-9.htm"/*tpa=http://www.tuhuanjk.com/THMemberData/GeneralInfo/*/ + item.ID;
+                    return { vistor: true};
+                }
+            }).focus().get(0).addEventListener("keydown", function(e){
+                if (e.keyCode == 13){
+                    $("#searchButton").click();
+                    e.preventDefault();
+                    e.stopImmediatePropagation();
+                    e.stopPropagation();
+                    return false;
+                }
+            });
+        });
+
+        return goToSearch;
+    })();
+</script>
+    </div>
+</div>
+
+<div class="footer">
+    <div>
+        <!--
+        <a href="#">ËÆæ‰∏∫È¶ñÈ°µ</a><span class="line"></span>
+            -->
+        <a href="javascript:if(confirm('http://about.tuhuanjk.com/  \n\n∏√Œƒº˛Œﬁ∑®”√ Teleport Ultra œ¬‘ÿ, “ÚŒ™ À¸ «“ª∏ˆ”ÚªÚ¬∑æ∂Õ‚≤ø±ª…Ë÷√Œ™À¸µƒ∆Ù ºµÿ÷∑µƒµÿ÷∑°£  \n\nƒ„œÎ‘⁄∑˛ŒÒ∆˜…œ¥Úø™À¸?'))window.location='http://about.tuhuanjk.com/'" tppabs="http://about.tuhuanjk.com/" target="_blank">ÂÖ≥‰∫éÊàë‰ª¨</a><span class="line"></span><a href="mailto:service@sctuhuan.com">ËÅîÁ≥ªÊàë‰ª¨</a>
+    </div>
+    <div>
+        Copyright&copy; 2017 - 2027 ÈÄîÊ¨¢ÁßëÊäÄ ËúÄICPÂ§á15025302Âè∑-1
+    </div>
+</div>
+
+
+
+    <div class="modal fade" id="login-dialog" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="modal-title"><img class="login-logo" src="logo_blue.png" tppabs="http://www.tuhuanjk.com/images/logo_blue.png" />ÈÄîÊ¨¢ÂÅ•Â∫∑Âπ≥Âè∞ÁôªÂΩï</span>
+                    <span data-dismiss="modal" class="close-btn"><img src="close.png" tppabs="http://www.tuhuanjk.com/images/close.png" /></span>
+                </div>
+                <div class="modal-body">
+                    <div id="error-output">&nbsp;</div>
+                    <div><input type="text" id="username" fill placeholder="ÈÄîÊ¨¢Ë¥¶Âè∑" errtext="ËØ∑ËæìÂÖ•Ë¥¶Âè∑" autofocus autocomplete="off" /></div>
+                    <div><input type="password" id="password" fill placeholder="ÂØÜÁ†Å" errtext="ËØ∑ËæìÂÖ•ÂØÜÁ†Å" /></div>
+                    <div class="hbox"><input type="text" id="verify" placeholder="ËØ∑ËæìÂÖ•È™åËØÅÁ†Å" errtext="ËØ∑ËæìÂÖ•È™åËØÅÁ†Å" autocomplete="off" /><img id="verifyImg" /></div>
+                    <div class="last-row">
+                        <label><input type="checkbox" id="remember" value="on" />Ëá™Âä®ÁôªÂΩï</label>
+                        <a href="reset.htm" tppabs="http://www.tuhuanjk.com/account/reset" target="_blank">ÂøòËÆ∞ÂØÜÁ†ÅÔºü</a>
+                    </div>
+                    <div id="submitButton">ÁôªÂΩï</div>
+                    <a id="regButton" href="doctorreg.htm" tppabs="http://www.tuhuanjk.com/account/doctorreg">Ê≥®ÂÜå</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap-v=bpa7NdPNdm_yNfivgK3FAC9n1KT9dCwYaph-hAeE7zE1" tppabs="http://www.tuhuanjk.com/bundles/bootstrap?v=bpa7NdPNdm_yNfivgK3FAC9n1KT9dCwYaph-hAeE7zE1"></script>
+
+
+    <script type="text/javascript">
+        window.doLogin = (function () {
+            var dtd = null;
+            var imgUrl = '/Account/VerifyCode';
+            $("#verifyImg").click(function () {
+                $(this).attr("src", imgUrl + "?r=" + Math.random());
+            });
+
+            $("input", "#login-dialog").keypress(function (e) {
+                if (e.which == 13) {
+                    $("#submitButton").click();
+                }
+            });
+
+            $("#submitButton").click(function () {
+                var notValidNodes = $("#username, #password, #verify").filter(function (i, node) {
+                    return !node.value;
+                });
+
+                if (notValidNodes.length != 0) {
+                    $("#error-output").text(notValidNodes.attr("errtext"));
+                    notValidNodes[0].focus();
+                    return;
+                }
+
+                $.post("/Account/Login", { username: $("#username").val(), password: $("#password").val(), verify: $("#verify").val(), isSave: $("#remember").prop("checked") })
+                .done(function (d) {
+                    if (d.ok) {
+                        if (dtd) {
+                            $("#login-dialog").modal('hide');
+                            dtd.resolve();
+                        } else {
+                            var rtnUrl = /[\\?&]ReturnUrl=([^&]+)/i.exec(location.href);
+                            if (rtnUrl) {
+                                location.href = decodeURIComponent(rtnUrl[1])
+                            } else {
+                                location.reload();
+                            }
+                        }
+                    } else {
+                        $("#error-output").text(d.text);
+                        $("#verifyImg").click();
+                    }
+                }).fail(function () {
+                    $("#error-output").text("ÁΩëÁªúÈîôËØØ");
+                    $("#verifyImg").click();
+                });
+            });
+
+            return function () {
+                dtd = $.Deferred();
+
+                $("#verifyImg").click();
+                $("#error-output").text("");
+                $("#username, #password, #verify").val("");
+                $("#login-dialog").modal('show');
+
+                setTimeout(function () {
+                    $("#username")[0].focus();
+                }, 100);
+
+                return dtd;
+            }
+        })();
+    </script>
+    
+    <script type="text/javascript">
+        $("#loginButton").click(function () {
+            doLogin().done(function () {
+                var rtnUrl = /[\\?&]ReturnUrl=([^&]+)/i.exec(location.href);
+                if (rtnUrl) {
+                    location.href = decodeURIComponent(rtnUrl[1])
+                } else {
+                    location.reload();
+                }
+            });
+        });
+
+        if (/[\\?&]ReturnUrl=([^&]+)/i.test(location.href)) {
+            $("#loginButton").click();
+        }
+
+        $("#searchButton").attr("src", "search.png"/*tpa=http://www.tuhuanjk.com/images/search.png*/);
+
+        $(".user-data .badge").mouseover(function () {
+            $("#todo-list-panel").addClass("show");
+        }).mouseleave(function () {
+            $("#todo-list-panel").removeClass("show");
+        });
+    </script>
+
+</body>
+</html>
