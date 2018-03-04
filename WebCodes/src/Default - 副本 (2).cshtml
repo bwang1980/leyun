@@ -1,0 +1,192 @@
+﻿@{
+    Layout = "~/_Layout.cshtml";
+    Page.Title = "乐宝贝";
+}
+<body>
+    <div id="header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" style="padding:0 0 0 15px;" href="index.htm" tppabs="http://www.clantrip.com/">
+                        <img alt="Brand" style="max-width:200px;"
+                             src="~/Images/logo.jpg" tppabs="http://www.clantrip.com/static/images/logo.png">
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">首页</a><p class="line-top hidden-xs"></p></li>
+                        <li><a href="index.php-m=content&c=index&a=show&catid=7&id=1.htm" tppabs="http://www.clantrip.com/index.php?m=content&c=index&a=lists&catid=6">赴加攻略</a></li>
+                        <li><a href="index.php-m=content&c=index&a=lists&catid=13.htm" tppabs="http://www.clantrip.com/index.php?m=content&c=index&a=lists&catid=13">套餐类型</a></li>
+                        <li><a href="index.php-m=content&c=index&a=lists&catid=9.htm" tppabs="http://www.clantrip.com/index.php?m=content&c=index&a=lists&catid=9">月子中心</a></li>
+                        <li><a href="index.php-m=content&c=index&a=lists&catid=10.htm" tppabs="http://www.clantrip.com/index.php?m=content&c=index&a=lists&catid=10">直营保障</a></li>
+                        <li><a href="index.php-m=content&c=index&a=lists&catid=14.htm" tppabs="http://www.clantrip.com/index.php?m=content&c=index&a=lists&catid=14">关于我们</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </div>
+        <!-- Carousel
+        ================================================== -->
+    <div id="carousel-example-generic" class="carousel slide my-slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <a target="_blank" href="index.php-m=content&c=index&a=lists&catid=9.htm" tppabs="http://www.clantrip.com/index.php?m=content&c=index&a=lists&catid=9">
+                    <img class="first-slide" src="~/Images/ads/a1.jpg" alt="First slide">
+                </a>
+            </div>
+            <div class="item">
+                <a target="_blank" href="index.php-m=content&c=index&a=lists&catid=13.htm" tppabs="http://www.clantrip.com/index.php?m=content&c=index&a=lists&catid=13">
+                    <img class="second-slide" src="~/Images/ads/a2.jpg" alt="Second slide">
+                </a>
+            </div>
+            <div class="item">
+                <a target="_blank" href="#">
+                    <img class="third-slide" src="~/Images/ads/a3.jpg" alt="Third slide"> 
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- /.carousel -->
+    <!-- 我们的成绩 -->
+    <div class="index-row our-data">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 main-title">
+                    <h2 class="h1">我们的成绩</h2>
+
+                    <p class="line line-big"></p>
+
+                    <h2>
+                        <small>2017年1月1日至2017年12月30日，我们的接待数据。</small>
+                    </h2>
+                </div>
+                <div class="col-sm-3 our-data-item sum-apply">
+                    <div class="number-wrapper">
+                        <span id="sum-apply" class="run-number" data-to="240">26,517</span>
+                    </div>
+                    <h4 class="title">累计受理申请</h4>
+                </div>
+                <div class="col-sm-3 our-data-item sum-rate">
+                    <div class="number-wrapper">
+                        <span id="sum-rate" class="run-number" data-to="240">98.6</span>%
+                    </div>
+                    <h4 class="title">综合通过率</h4>
+                </div>
+                <div class="col-sm-3 our-data-item sum-urgent">
+                    <div class="number-wrapper">
+                        <span id="sum-urgent" class="run-number" data-to="240">7,368</span>
+                    </div>
+                    <h4 class="title">加急申请人数</h4>
+                </div>
+                <div class="col-sm-3 our-data-item urgent-rate">
+                    <div class="number-wrapper">
+                        <span id="urgent-rate" class="run-number" data-to="240">100</span>%
+                    </div>
+                    <h4 class="title">加急成功率</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 我们的成绩 -->
+
+
+
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+        <div class="container marketing">
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="img-circle" src="~/Images/Market/a1.jpg" alt="3434345e45r454554454555" width="200" height="200">
+                    <h2>专业服务</h2>
+                    <p>中、加两地直营会所，专业文案操作团队+加拿大权威律师为您签证，入关保驾护航，通关保障，赴加生子首选机构！</p>
+                    <p><a class="btn btn-default" href="#" role="button">详细介绍 &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="img-circle" src="~/Images/Market/a2.jpg" alt="Generic placeholder image" width="200" height="200">
+                    <h2>直营保障</h2>
+                    <p>高端母婴会所，多重放心保障，会所拥有专业的孕妈贴心服务团队，从机场接送、入住会所待产及产检、出行出游聚餐服务，生产及陪护、月子专享服务、宝宝证件办理，精心的照顾孕妈直到顺利回国，为准妈咪们打造一站式—度假式生产模式，让您的生子之旅变成一次高端的海外畅游之行</p>
+                    <p><a class="btn btn-default" href="#" role="button">详细介绍 &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="img-circle" src="~/Images/Market/a3.jpg" alt="Generic placeholder image" width="200" height="200">
+                    <h2>生子攻略</h2>
+                    <p>高端母婴会所，多重放心保障，会所拥有专业的孕妈贴心服务团队，从机场接送、入住会所待产及产检、出行出游聚餐服务，生产及陪护、月子专享服务、宝宝证件办理，精心的照顾孕妈直到顺利回国，为准妈咪们打造一站式—度假式生产模式，让您的生子之旅变成一次高端的海外畅游之行</p>
+                    <p><a class="btn btn-default" href="#" role="button">详细介绍 &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+            <!-- START THE FEATURETTES -->
+            <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-lg-12">
+                        <img class="featurette-image img-responsive center-block" src="~/Images/lc.png" alt="Generic placeholder image">
+                    </div>
+                </div>
+            <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">套餐类别  </h2>
+                        <p class="lead">丰富多样的套餐选择<br />可私人定制化的套餐服务</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-responsive center-block" src="~/Images/fuwu1.jpg" alt="Generic placeholder image">
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7 col-md-push-7">
+                        <h2 class="featurette-heading">六大优势  </h2>
+                        <p class="lead">1:中加两地垂直化管理&nbsp;&nbsp;2:正规合同保障<br />3:一站式海外孕产服务&nbsp;&nbsp;4:专业团队管家式服务<br />5:中加均有实体办公机构&nbsp;&nbsp;6:依托公司强大资源</p>
+                    </div>
+                    <div class="col-md-5 col-md-pull-7">
+                        <img class="featurette-image img-responsive center-block" src="~/Images/6dayoushi.jpg" alt="Generic placeholder image">
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">增值服务 </h2>
+                        <p class="lead">代订机票&nbsp;&nbsp;办理国际驾照&nbsp;&nbsp;产房陪产&nbsp;&nbsp;脐带血&nbsp;&nbsp;满月生日派对&nbsp;&nbsp;会员聚会&nbsp;&nbsp;安家置业&nbsp;&nbsp;游学服务等</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-responsive center-block" src="~/Images/6dayoushi.jpg" alt="Generic placeholder image">
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+                <!-- /END THE FEATURETTES -->
+                <!-- FOOTER -->
+                <footer>
+                    <p class="pull-right"><a href="#">Back to top</a></p>
+                    <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                </footer>
+            </div><!-- /.container -->
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
+        <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+        <script src="~/Scripts/holder/holder.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="~/Scripts/ie10-viewport-bug-workaround.js"></script>
+</body>
