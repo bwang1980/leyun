@@ -25,6 +25,10 @@ a:focus{
 }
 /*所有按钮加渐变动画*/
 
+.grid-item { width: 200px; }
+.grid-item--width2 { width: 400px; }
+
+
 /*幽灵按钮*/
 .btn-outline-inverse{
     color: #fff;
