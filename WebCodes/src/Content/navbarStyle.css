@@ -24,9 +24,18 @@ a:focus{
     transition: all 0.225s ease-in-out;
 }
 /*所有按钮加渐变动画*/
+ .container-fluid {  
+            padding: 20px;  
+        }  
+.box {
+    margin-bottom: 20px;  
+            float: left;  
+            width: 200px;  
+}
+.box img{
+    max-width: 100%  
+}
 
-.grid-item { width: 200px; }
-.grid-item--width2 { width: 400px; }
 
 
 /*幽灵按钮*/
