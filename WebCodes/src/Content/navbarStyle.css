@@ -521,7 +521,7 @@ blockquote .quote-content{
     padding:10px;
 }
 .our-whyus-item:hover{
-    background-color: #0ba1e4;
+    background-color: pink;
     border:1px solid #0ba1e4;
     box-shadow: 0 0 20px 0 rgba(45,183,245,.5);
     color: #fff;
